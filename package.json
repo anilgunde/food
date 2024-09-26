@@ -87,7 +87,7 @@
     "build:production": "rm -Rf build && env-cmd -f .env.production react-scripts build && npm run tar:build",
     "tar:build": "rm -f adafsa-admin.tgz && tar czvf adafsa-admin.tgz -C build .",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "prepare": "husky install"
+    
   },
   "proxy": "http://foodsurvey.aptiway.com",
   
